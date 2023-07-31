@@ -1,0 +1,163 @@
+<?php
+
+$user = ["Василий", "каменщик", "DafultCountry, DefaultCity", "user@penagon.mil", 89112233456];
+$age = 36;
+$age_in_days = $age * 365;
+
+$skills = [
+'skills_name' => ['Lint', 'Corel', 'OracleDB', 'Linux', 'Певец', 'Повар'],
+'skills_percent' => [80, 70, 96, 45, 12, 46]
+];
+$work_expirience = [
+    'position' => ['Front End Developer', 'Web Developer / something.com', 'Graphic Designer / designsomething.com'],
+    'years_of_work' => ['Jan 2015 - Current', 'Mar 2012 - Dec 2014', 'Jun 2010 - Mar 2012'],
+    'description' => [
+        'Designed and implemented web applications along with 3rd-party software integrations as a web team liaison for all interdepartmental 
+        and customer-facing projects. Developed a node.js server to validate membership and track digital badges being used, saving the company $22.5K.
+        Mentored 6 team members, enabling them to achieve professional
+        growth and personal goals.',
+        'Developed documentation to teach new team members company standards and best practices in React.js and Node.js.',
+        'Created graphic design standards for motion graphic assets, which improved brand consistency for 6 teams'
+    ]
+];
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Мое резюме</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FCJI4SB_8VaR0deLO81xS4tXQL7dSOOYX9u-BihiUyD22r2EPnnl_9oS4U-Z0rGrFADTduzjCPmmGPVSiymc9zvQ018s8pf6b_hQKnbJX8xdsfpJJmUcBHYo8IdSsrCqp8Q2h7HCt4e9ctgDpxfwS27kMzfgpxKX7mkJ2zAXJNP1s6mWvAcWKQ0Ep6AfWhvZr27EEVPMioWHZP9LxaUTHgNN-jE4TIBKnSX3jUpPlqBb5o5NLuO75U767p2mKHN6TEt7UDwZg5BmwQpca5_q18DDLBtdjxhhpFz-4FMBYAvYnReBWn18qqzgcsKRVrjvY-_tLlU3cUU6sW1cdyCoDXdmCm2XPd6mL6DtJXjIvqkVFZ05mMUhPUUIcgMAoNkf-6lvACixVpZBJ0CXSKv5qlYYhxSZkUpPdBUzyBXNmgMGYZo3TALAT13PCZxeykSHv7WNKBHm0zQeh3JSajG3s_Q0aslxecS_TXvo25h7PEkrIX19QaoR6zL5wOYVny-Yg4ace_hbOF7KncdJ4kU9aVCoNs_K3cHOufPuP0X3vFwFlBKqjifyebVP5W7kW3yfT8wNa4bw7NFdgNUliVb_PfCOGAM8HEGd0luINGoxKv_jXCthP35D7fheny_c1UHd1nsuIX3IGHJgmZkOiAQfnmYgA2prPOqgkNjx0HcCIB3OTia4FXMHuphQM7dbPLQdTwG4kPi1yVPHoH7O3FaFW4x-FnMIQNcDawHiSh4BnMx-Y3sjSFr_8N8D-l1kKFVQSIvTGmMdkfeY8ngr5SulZaxAy3ixFYTc-G6R-CJR9kbCHbpmQ0keGIf1wfl_2O2YQzNTn9ZHK1AzO0vF9J7ekd_Y7w3QPwb4S1Fc8sZu_q_pYqoencTQgkebqVh55ac4HAO6WQNmfcWj3wSyEKZA3NdEPrb79c2bHtc9N-cdSFKgi-FrNRnQ3WFtoFkH4CUENEZUX15MMv1uPQHPy5kHyo_MAZpRaqhd_aIG7aEkFXR465NOEx9ybCJJPazpw-jNGxzwxaXyD3ScW43L5rW5Vw-G5RDSm9kA64XMGNRiAEs" charset="UTF-8"></script><style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Jost', sans-serif;}
+    </style>
+  </head>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Имя - <?php echo $user[0]; ?></h2>            
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Профессия: <?php echo $user[1]; ?></p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Город, страна: <?php echo $user[2]; ?></p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>E-mail: <?php echo $user[3]; ?></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Телефон: <?php echo $user[4]; ?></p>          
+          <p><i class="fa fa-hourglass-half fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo "Возраст:" .$age . " лет (" . $age_in_days . " дней)" ?></p>
+          <hr>
+          
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
+          
+          <?php
+            for ($i = 0; $i < count($skills['skills_name']); $i++) {            
+                echo "<p>" . $skills['skills_name'][$i] . "</p>\n";
+                echo "<div class=\"w3-light-grey w3-round-xlarge w3-small\">\n";
+                echo "<div class=\"w3-container w3-center w3-round-xlarge w3-teal\" style=\"width:" . $skills['skills_percent'][$i] . "%\">" . $skills['skills_percent'][$i] . "</div>
+                      </div>";
+            }
+          ?>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Языки</b></p>
+          <p>Английский</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Испанский</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          </div>
+          <p>Немецкий</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><?php echo $work_expirience['position'][0]; ?> </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $work_expirience['years_of_work'][0]; ?></span></h6>
+          <p><?php echo $work_expirience['description'][0]; ?></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b><?php echo $work_expirience['position'][1]; ?> </b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $work_expirience['years_of_work'][1]; ?></span></h6>
+            <p><?php echo $work_expirience['description'][1]; ?></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b><?php echo $work_expirience['position'][2]; ?> </b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $work_expirience['years_of_work'][2]; ?></span></h6>
+            <p><?php echo $work_expirience['description'][2]; ?></p>
+          <br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>gb.ru</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <p>Web Development! All I need to know in one place</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>London Business School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Master Degree</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>School of Coding</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+          <p>Bachelor Degree</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+ <!-- End footer -->
+ </footer>
+
+</body>
+</html>
