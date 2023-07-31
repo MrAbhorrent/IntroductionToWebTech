@@ -1,0 +1,65 @@
+h1 {
+    color: chartreuse;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h4 {
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.water {
+    color: blue
+}
+
+.fire {
+    color: red;
+}
+
+.active {
+    color: greenyellow;
+}
+
+.card {
+    border: 3px dotted rgb(255, 217, 0);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;        
+    cursor: pointer;
+}
+
+.button1, .button2 {
+    width: 250px;
+    height: 50px;
+    background-color: azure;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.button3{
+    width: 250px;
+    height: 50px;
+    background-color: burlywood;
+    color: crimson;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background-color: coral;
+    color: black;
+}
